@@ -1,0 +1,17 @@
+@import "assets/styles/common.css";
+
+.inputWrapper {
+  position: relative;
+}
+
+.children {
+  position: absolute;
+  right: 0;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #b2b2b2;
+  border-radius: 25px;
+}
