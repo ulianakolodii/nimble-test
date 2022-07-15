@@ -27,8 +27,8 @@ const Tracker = ({ name, spent, paused, onStart, onPause, onRemove }) => {
       <div className={classes.trackerSubContainer}>
         <span className={classes.spentTime}>{spent}</span>
         <div className={classes.buttonsContainer}>
-        {paused && <button className={classes.startButton} onClick={handleStart}><PauseIcon /></button>}
-        {!paused && <button className={classes.pauseButton} onClick={handlePause}><StartIcon /></button>}
+        {paused && <button className={classes.startButton} onClick={handleStart}><StartIcon /></button>}
+        {!paused && <button className={classes.pauseButton} onClick={handlePause}><PauseIcon /></button>}
         <button className={classes.removeButton} onClick={handleRemove}><RemoveIcon className={classes.removeIcon}/></button></div>
       </div>
     </div>

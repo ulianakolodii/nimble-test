@@ -2,12 +2,12 @@
 
 .trackerContainer {
   max-width: 560px;
-  padding-top: 15px;
+  padding: 15px 0;
   margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .trackerSubContainer {

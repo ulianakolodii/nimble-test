@@ -81,13 +81,13 @@ function App() {
   return (
     <div className="App">
       <div className="tracker__title">time tracker</div>
-      <Input onAdd={handleAdd} placeholder="Enter tracker name">
+      <Input onAdd={handleAdd}>
         <PlayButton />
       </Input>
-      <pre>
+      {/* <pre>
         {JSON.stringify(state, null, 4)}
-        {/* {JSON.stringify(preparedState, null, 4)} */}
-      </pre>
+        { {JSON.stringify(preparedState, null, 4)} }
+      </pre> */}
       {Object.keys(preparedState).map((name) => (
         <Tracker
           key={name}
