@@ -1,0 +1,64 @@
+@import "assets/styles/common.css";
+
+.trackerContainer {
+  max-width: 560px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+
+.trackerSubContainer {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackerTitle {
+  margin-left: 30px;
+}
+
+.spentTime,
+.trackerTitle {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: default;
+}
+
+.buttonsContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.startButton,
+.pauseButton,
+.removeButton {
+  cursor: pointer;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 3px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startButton,
+.pauseButton {
+  border-color: var(--start-pause-button-color);
+}
+
+.removeButton {
+  border-color: var(--delete-button-color);
+}
+
+.removeIcon {
+  fill: var(--delete-button-color);
+}

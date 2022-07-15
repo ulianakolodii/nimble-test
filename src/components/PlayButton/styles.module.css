@@ -1,6 +1,7 @@
 @import url(../../assets/styles/common.css);
 
 .playButton {
+  cursor: pointer;
   background-color: var(--play-button-color);
   border-radius: 25px;
   border: 0;

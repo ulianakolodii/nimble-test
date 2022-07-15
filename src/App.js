@@ -81,7 +81,7 @@ function App() {
   return (
     <div className="App">
       <div className="tracker__title">time tracker</div>
-      <Input onAdd={handleAdd}>
+      <Input onAdd={handleAdd} placeholder="Enter tracker name">
         <PlayButton />
       </Input>
       <pre>

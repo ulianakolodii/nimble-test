@@ -1,4 +1,9 @@
 import React from "react";
+import classes from "./styles.module.css";
+import { ReactComponent as PauseIcon } from "assets/img/pause-icon.svg";
+import { ReactComponent as StartIcon } from "assets/img/play-icon.svg";
+import { ReactComponent as RemoveIcon } from "assets/img/remove-icon.svg";
+
 
 const Tracker = ({ name, spent, paused, onStart, onPause, onRemove }) => {
   const handleStart = () => {
@@ -15,15 +20,16 @@ const Tracker = ({ name, spent, paused, onStart, onPause, onRemove }) => {
 
 
   return (
-    <div>
+    <div className={classes.trackerContainer}>
       <div>
-        <span>{name}</span>
+      <span className={classes.trackerTitle}>{name}</span>
       </div>
-      <div>
-        <span>{spent}</span>
-        {paused && <button onClick={handleStart}>Start</button>}
-        {!paused && <button onClick={handlePause}>Pause</button>}
-        <button onClick={handleRemove}>Delete</button>
+      <div className={classes.trackerSubContainer}>
+        <span className={classes.spentTime}>{spent}</span>
+        <div className={classes.buttonsContainer}>
+        {paused && <button className={classes.startButton} onClick={handleStart}><PauseIcon /></button>}
+        {!paused && <button className={classes.pauseButton} onClick={handlePause}><StartIcon /></button>}
+        <button className={classes.removeButton} onClick={handleRemove}><RemoveIcon className={classes.removeIcon}/></button></div>
       </div>
     </div>
   );
