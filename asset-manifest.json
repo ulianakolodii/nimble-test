@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nimble-test/static/css/main.afd0a439.css",
+    "main.js": "/nimble-test/static/js/main.65a264b7.js",
+    "index.html": "/nimble-test/index.html",
+    "static/media/pause-icon.svg": "/nimble-test/static/media/pause-icon.b52642a69fbddde18d7cbad5290c5434.svg",
+    "static/media/remove-icon.svg": "/nimble-test/static/media/remove-icon.2044adfbc437f3f68f4ddfbde2e47719.svg",
+    "static/media/main-play-arrow.svg": "/nimble-test/static/media/main-play-arrow.70ca56e05b5fd8cdec593a6674047149.svg",
+    "static/media/play-icon.svg": "/nimble-test/static/media/play-icon.222a0afb025a9c63c372674f234348d9.svg",
+    "main.afd0a439.css.map": "/nimble-test/static/css/main.afd0a439.css.map",
+    "main.65a264b7.js.map": "/nimble-test/static/js/main.65a264b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afd0a439.css",
+    "static/js/main.65a264b7.js"
+  ]
+}
