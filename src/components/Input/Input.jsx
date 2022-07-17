@@ -4,16 +4,15 @@ import classes from "./styles.module.css";
 const Input = ({ children, initialValue = "", onAdd }) => {
   const [value, setValue] = useState(initialValue);
 
+  const handleInput = (event) => {
+    setValue(event.target.value);
+  };
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       onAdd(value);
       setValue("");
     }
-  };
-
-  const handleInput = (event) => {
-    setValue(event.target.value);
-    setValue("");
   };
 
   const handleChildrenClick = () => {

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import "assets/styles/App.css";
 import Input from "./components/Input/Input";
 import PlayButton from "./components/PlayButton/PlayButton";
@@ -48,15 +48,22 @@ const remove = (state, keyToRemove) =>
     return newState;
   }, {});
 
-function App() {
+const App = ({ interval = 1000 }) => {
   const [state, setState] = useLocalStorage("tracker", {});
+  const [tick, setTick] = useState(0);
 
-  const preparedState = useMemo(() => prepareTrackersList(state), [state]);
+  const preparedState = useMemo(
+    () => prepareTrackersList(state),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [state, tick]
+  );
 
   const handleAdd = (value) => {
+    const name =
+      value || new Date().toISOString().slice(0, 19).replace("T", " ");
     setState({
       ...state,
-      [value]: [[Date.now()]],
+      [name]: [[Date.now()]],
     });
   };
 
@@ -78,16 +85,22 @@ function App() {
     setState(remove(state, name));
   };
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTick((prev) => prev + 1);
+    }, interval);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [interval]);
+
   return (
     <div className="App">
       <div className="tracker__title">time tracker</div>
       <Input onAdd={handleAdd}>
         <PlayButton />
       </Input>
-      {/* <pre>
-        {JSON.stringify(state, null, 4)}
-        { {JSON.stringify(preparedState, null, 4)} }
-      </pre> */}
       {Object.keys(preparedState).map((name) => (
         <Tracker
           key={name}
@@ -99,10 +112,8 @@ function App() {
           onRemove={handleRemove}
         />
       ))}
-      {/* <Tracker name="hello word" spent="10:00" />
-      <Tracker name="hello word" spent="10:00" paused /> */}
     </div>
   );
-}
+};
 
 export default App;
