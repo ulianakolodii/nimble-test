@@ -16,7 +16,6 @@
 }
 
 .trackerSubContainer {
-  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +30,8 @@
 }
 
 .buttonsContainer {
-  width: 30%;
+  margin-left: 12px;
+  gap: 4px;
   display: flex;
   justify-content: space-between;
 }
