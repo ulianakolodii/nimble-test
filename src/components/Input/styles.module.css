@@ -15,6 +15,6 @@
 .inputField {
   width: 100%;
   padding: 10px;
-  border: 2px solid #b2b2b2;
+  border: 2px solid var(--input-border-color);
   border-radius: 25px;
 }
