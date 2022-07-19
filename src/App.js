@@ -97,7 +97,7 @@ const App = ({ interval = 1000 }) => {
 
   return (
     <div className="App">
-      <div className="tracker__title">time tracker</div>
+      <div className="tracker__title">Time tracker</div>
       <Input onAdd={handleAdd}>
         <PlayButton />
       </Input>
