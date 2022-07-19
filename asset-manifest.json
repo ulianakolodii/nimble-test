@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nimble-test/static/css/main.e3677ee2.css",
-    "main.js": "/nimble-test/static/js/main.65a264b7.js",
+    "main.css": "/nimble-test/static/css/main.b484c626.css",
+    "main.js": "/nimble-test/static/js/main.538d6a94.js",
     "index.html": "/nimble-test/index.html",
     "static/media/pause-icon.svg": "/nimble-test/static/media/pause-icon.b52642a69fbddde18d7cbad5290c5434.svg",
     "static/media/remove-icon.svg": "/nimble-test/static/media/remove-icon.2044adfbc437f3f68f4ddfbde2e47719.svg",
     "static/media/main-play-arrow.svg": "/nimble-test/static/media/main-play-arrow.70ca56e05b5fd8cdec593a6674047149.svg",
     "static/media/play-icon.svg": "/nimble-test/static/media/play-icon.222a0afb025a9c63c372674f234348d9.svg",
-    "main.e3677ee2.css.map": "/nimble-test/static/css/main.e3677ee2.css.map",
-    "main.65a264b7.js.map": "/nimble-test/static/js/main.65a264b7.js.map"
+    "main.b484c626.css.map": "/nimble-test/static/css/main.b484c626.css.map",
+    "main.538d6a94.js.map": "/nimble-test/static/js/main.538d6a94.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3677ee2.css",
-    "static/js/main.65a264b7.js"
+    "static/css/main.b484c626.css",
+    "static/js/main.538d6a94.js"
   ]
 }
