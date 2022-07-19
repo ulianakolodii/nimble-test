@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ulianakolodii.github.io/nimble-test/",
-  "name": "nimble-test",
+  "homepage": "https://ulianakolodii.github.io/time-tracker/",
+  "name": "time-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
